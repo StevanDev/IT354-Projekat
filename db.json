@@ -1,0 +1,106 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "first_name": "John",
+      "last_name": "Doe",
+      "email": "john.doe@example.com",
+      "password": "hashed_password",
+      "user_type": "regular"
+    },
+    {
+      "id": "944b",
+      "firstName": "Gagica",
+      "lastName": "Gagilic",
+      "email": "gagica@gmail.com",
+      "password": "gagi",
+      "user_type": "regular"
+    },
+    {
+      "id": "d2a2",
+      "firstName": "Stevan",
+      "lastName": "Sremac",
+      "email": "stevan@gmail.com",
+      "password": "$2b$10$5gT54IItEOm261Amvwo/SeulFA73g75215vA1kyDfOk4rkMURDF92",
+      "user_type": "regular"
+    },
+    {
+      "id": "1cb7",
+      "firstName": "admin",
+      "lastName": "admin",
+      "email": "admin@admin.com",
+      "password": "$2b$10$CtiLw7agJcRM5dR7Ejwk4eI5a29uFOMHt0XTjwk3MAq.eRXxx/JSu",
+      "user_type": "admin"
+    }
+  ],
+  "movies": [
+    {
+      "id": "a634",
+      "title": "Titanic",
+      "genre": "Adventure",
+      "year": "1993",
+      "director": "James Cameroon",
+      "actors": [
+        "Kate Winslet",
+        "Leonardo DiCaprio"
+      ],
+      "poster": "titanic.png",
+      "duration": "197",
+      "average_rating": "7.9",
+      "projections": []
+    },
+    {
+      "id": "0449",
+      "title": "Moonlight",
+      "genre": "Drama",
+      "year": "2016",
+      "director": "Barry Jenkins",
+      "actors": [
+        "Mahershala Ali",
+        "Naomie Harris"
+      ],
+      "poster": "moonlight.png",
+      "duration": "111",
+      "average_rating": "7.4",
+      "projections": [
+        {
+          "date_time": "2025-06-18",
+          "room": "Hall 1",
+          "total_seats": "100",
+          "available_seats": "80",
+          "ticket_price": "10"
+        }
+      ]
+    },
+    {
+      "id": "0ae8",
+      "title": "Kill Bill: Vol. 1",
+      "genre": "Action",
+      "year": "2003",
+      "director": "Quentin Tarantino",
+      "actors": [
+        "Uma Thurman",
+        "David Carradine"
+      ],
+      "poster": "killbill1.png",
+      "duration": "111",
+      "average_rating": "8.2",
+      "projections": [
+        {
+          "date_time": "2025-06-18",
+          "room": "Hall 2",
+          "total_seats": "120",
+          "available_seats": "76",
+          "ticket_price": "10"
+        },
+        {
+          "date_time": "2025-06-11",
+          "room": "Hall 3",
+          "total_seats": 100,
+          "available_seats": 80,
+          "ticket_price": 10
+        }
+      ]
+    }
+  ]
+}
