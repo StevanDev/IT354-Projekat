@@ -17,7 +17,7 @@ const Register = () => {
 
     if (isAuthenticated) return <Navigate to={"/"} />
     return (
-        <>
+        <div className='login-register'>
             <h1>Register</h1>
             <form onSubmit={handleSubmit}>
                 <input type="text" value={firstName} placeholder='First Name' onChange={(event) => { setFirstName(event.target.value) }} />
@@ -27,7 +27,7 @@ const Register = () => {
                 <button type='submit'>Register</button>
             </form>
             <NavLink to={'/login'}>U already have an account? Log in!</NavLink>
-        </>
+        </div>
     )
 }
 

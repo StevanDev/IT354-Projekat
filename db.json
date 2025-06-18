@@ -1,7 +1,7 @@
 {
   "users": [
     {
-      "id": 1,
+      "id": "1",
       "first_name": "John",
       "last_name": "Doe",
       "email": "john.doe@example.com",
@@ -67,7 +67,7 @@
           "date_time": "2025-06-18",
           "room": "Hall 1",
           "total_seats": "100",
-          "available_seats": "80",
+          "available_seats": 78,
           "ticket_price": "10"
         }
       ]

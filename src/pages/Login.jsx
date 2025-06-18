@@ -15,15 +15,25 @@ const Login = () => {
 
     if (isAuthenticated) return <Navigate to={"/"} />
     return (
-        <>
+        <div className='login-register'>
             <h1>Login</h1>
             <form onSubmit={handleSubmit}>
-                <input type="email" value={email} placeholder='email' onChange={(event) => { setEmail(event.target.value) }} />
-                <input type="password" value={password} placeholder='password' onChange={(event) => { setPassword(event.target.value) }} />
+                <input
+                    type="email"
+                    value={email}
+                    placeholder='email'
+                    onChange={(event) => { setEmail(event.target.value) }} />
+                <input
+                    type="password"
+                    value={password}
+                    placeholder='password'
+                    onChange={(event) => { setPassword(event.target.value) }} />
                 <button type='submit'>Login</button>
             </form>
-            <NavLink to={'/register'}>U dont have account? Then register!</NavLink>
-        </>
+            <NavLink to={'/register'}>
+                U dont have account? Then register!
+            </NavLink>
+        </div>
     )
 }
 

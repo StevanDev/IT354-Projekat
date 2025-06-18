@@ -304,6 +304,10 @@ input[type="file"] {
   transform: scale(1.03);
 }
 
+.login-register {
+  text-align: center;
+}
+
 @media (max-width: 768px) {
   .movie-card {
     flex-direction: column;

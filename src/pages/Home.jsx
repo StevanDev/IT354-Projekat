@@ -16,7 +16,7 @@ const Home = () => {
         <>
             <Navigation />
             <div className="container">
-                <h1 className="movielist-header">MovieList</h1>
+                <h1 className="movielist-header">Movie List</h1>
                 <MovieList movies={movies} onDelete={handleDeleteMovie} onReservation={handleReservation} />
             </div>
         </>

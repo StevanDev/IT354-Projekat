@@ -16,7 +16,6 @@ const AuthProvider = ({ children }) => {
             setCurrentUser(null)
             alert("Invalid credentials")
         }
-
     }
 
     const register = async (firstName, lastName, email, password) => {

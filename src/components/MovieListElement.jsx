@@ -60,7 +60,6 @@ const MovieListElement = ({ movie, onDelete, onReservation }) => {
                         </>
                         }
                     </div>
-
                 </div>
             </div>
             {location.pathname === `/movies/${movie.id}` &&
@@ -69,7 +68,6 @@ const MovieListElement = ({ movie, onDelete, onReservation }) => {
                     <div className="projections-grid">
                         {movie.projections.map((projection, index) => (
                             <div key={index} className="projection-card">
-                                <p><span className="emoji">🆔</span> <b>ID:</b> {projection.id}</p>
                                 <p><span className="emoji">📅</span> <b>Datum:</b> {projection.date_time}</p>
                                 <p><span className="emoji">🎬</span> <b>Sala:</b> {projection.room}</p>
                                 <p>
@@ -89,14 +87,11 @@ const MovieListElement = ({ movie, onDelete, onReservation }) => {
                                     }}>Rezerviši mesto</button>
                                 }
                             </div>
-
                         ))}
                     </div>
                 </div>
             }
-
         </div>
-
     );
 };
 

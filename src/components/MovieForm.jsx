@@ -3,7 +3,6 @@ import ProjectionForm from "./ProjectionForm"
 import { useState } from "react"
 import { FaImage } from "react-icons/fa";
 
-
 const MovieForm = ({ movie, setMovie, onSubmit }) => {
     const [imagePreview, setImagePreview] = useState(movie.image || null)
 
@@ -12,7 +11,6 @@ const MovieForm = ({ movie, setMovie, onSubmit }) => {
         const key = event.target.name
         setMovie({ ...movie, [key]: value })
     }
-
     const handleFileChange = (event) => {
         const file = event.target.files[0]
         if (file) {
@@ -21,7 +19,6 @@ const MovieForm = ({ movie, setMovie, onSubmit }) => {
             setImagePreview(URL.createObjectURL(file))
         }
     }
-
     const setActors = (newActors) => {
         setMovie({ ...movie, actors: newActors })
     }
@@ -29,12 +26,10 @@ const MovieForm = ({ movie, setMovie, onSubmit }) => {
     const setProjections = (newProjections) => {
         setMovie({ ...movie, projections: newProjections })
     }
-
     return (
         <form className="movie-form-grid" onSubmit={(event) => {
             event.preventDefault()
             onSubmit()
-
         }}>
             <input type="text" name="title" placeholder="Title" value={movie.title} onChange={handleChange} />
             <input type="text" name="genre" placeholder="Genre" value={movie.genre} onChange={handleChange} />
@@ -47,12 +42,10 @@ const MovieForm = ({ movie, setMovie, onSubmit }) => {
                 Upload Movie Cover
             </label>
 
-
             <input id="file-upload" type="file"
                 accept="image/*"
                 onChange={handleFileChange} />
             {imagePreview && <img src={imagePreview} alt="preview" style={{ width: "150px", marginTop: "10px" }} />}
-
             <input type="number" name="duration" placeholder="Duration" value={movie.duration} onChange={handleChange} />
             <input type="number" name="average_rating" placeholder="Rating" value={movie.average_rating} onChange={handleChange} />
             <ProjectionForm projections={movie.projections} setProjections={setProjections} />
@@ -60,5 +53,4 @@ const MovieForm = ({ movie, setMovie, onSubmit }) => {
         </form>
     )
 }
-
 export default MovieForm
